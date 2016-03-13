@@ -1,62 +1,73 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Zotero-Tutorial</title>
-		<meta name="description" content="Slides">
-		<meta name="author" content="Christof Schöch">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+<head>
+<meta charset="utf-8">
+<!-- CUSTOMIZE THIS! -->
+<title>Zotero-Tutorial</title>
+<meta name="author" content="Christof Schöch">
+<!-- END -->
+<meta name="description" content="Slides">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<!-- Printing and PDF exports -->
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
 
 <body>
 <div class="reveal">
+<!-- THIS IS WHERE THE CONTENT GOES! -->
 <!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
 	
-<section>
-<h2>Literaturverwaltung mit Zotero</h2>
+<section data-markdown>
+<script type="text/template">
+# Literaturverwaltung mit Zotero
 <hr/>
+<p></p>
 <p>Workshop Digitale Forschungsmethoden in der Romanistik</p>
 <p>Forum Junge Romanistik 2016, Universität Würzburg</p>
+<p></p>
 <hr/>
+<p></p>
 <p>Christof Schöch (CLiGS, Universität Würzburg)</p>
 <img height="50" data-src="img/UWUE.jpg"></img>
+<p></p>
+</script>
 </section>
 
-<section>
-<h2>Überblick</h2>
-<ol>
-<li>0. Ziele dieses Tutorials</li>
-<li>1. Was ist Zotero?</li>
-<li>2. Installation von Zotero</li>
-<li>3. Referenzen eintragen</li>
-<li>4. Referenzen organisieren</li>
-<li>5. Referenzen beim Schreiben verwenden</li>
-<li>6. Referenzen exportieren</li>
-<li>7. Fortgeschrittene Szenarien</li>
-<li>8. Weiterlesen, Weiterlernen?</li>
-</ol>
+<section data-markdown>
+<script type="text/template">
+## Überblick
+# Ziele dieses Tutorials
+# Was ist Zotero?
+# Installation von Zotero
+# Referenzen eintragen
+# Referenzen organisieren
+# Referenzen beim Schreiben verwenden
+# Referenzen exportieren
+# Fortgeschrittene Szenarien
+# Weiterlesen, Weiterlernen?
+</script>
 </section>
 
-<section>
-<h2>1. Was ist Zotero?</h2>
+<section data-markdown>
+<script type="text/template">
+# 1. Was ist Zotero?
+</script>
 </section>
 
 <section data-markdown>
@@ -70,64 +81,33 @@
 </script>
 </section>
 
-<section>
-<h3>Kollationierung: Juxta</h3>
-<img height="500" data-src="img/TA_Juxta.jpg"></img>
-<p><a href="http://www.juxtasoftware.org/">http://www.juxtasoftware.org/</a></p>
-</section>
-
-
-<section>
-<h2>Textanalyse</h2>
-</section>
-
-<section>
-<h2>Perspektiven der digitalen Textanalyse</h2>
-<ul>
-<li>Quantitative vs. qualitative Verfahren</li>
-<li>Klassifikation vs. Clustering</li>
-</ul>
-</section>
-
-<section>
-<h3>CATMA: Annotation</h3>
-<img height="500" data-src="img/TA_CATMA.jpg"></img>
-<p><a href="http://www.catma.de/">http://www.catma.de/</a></p>
-</section>
-
-<section>
-<h3>TXM: Analyse</h3>
-<img height="500" data-src="img/TA_TXM.jpg"></img>
-<p><a href="http://textometrie.ens-lyon.fr/">http://textometrie.ens-lyon.fr/</a></p>
-</section>
 
 
 
 
+<!-- DON'T TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING :-) -->
 </div>
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-		<script>
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+	controls: true,
+	progress: true,
+	history: true,
+	center: true,
+	transition: 'slide', // none/fade/slide/convex/concave/zoom
+	// Optional reveal.js plugins
+	dependencies: [
+		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+		{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		{ src: 'plugin/zoom-js/zoom.js', async: true },
+		{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+</script>
+</body>
 </html>
